@@ -135,9 +135,10 @@ Engine_Shatter : CroneEngine {
     server.sync;
 
     // -- instantiate capture --
+    // context.in_b is an Array of two Bus objects [left, right]
     capture_synth = Synth(\shatter_capture, [
-      \in_l, context.in_b.index,
-      \in_r, context.in_b.index + 1,
+      \in_l, context.in_b[0].index,
+      \in_r, context.in_b[1].index,
       \buf, capture_buf,
       \amp, 1
     ], target: capture_group);
