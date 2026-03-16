@@ -21,7 +21,7 @@ unlike static beat slicers that chop audio into equal pieces, shatter works with
 from maiden:
 
 ```
-;install https://github.com/yourname/shatter
+;install https://github.com/semierendonmez-commits/shatter
 ```
 
 after installation, restart norns to compile the supercollider engine.
